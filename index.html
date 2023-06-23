@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- ------------------css tag---------- -->
     <link rel="stylesheet" href="style.css">
+    <!-- --------font awesome--------- -->
+    <script src="https://kit.fontawesome.com/e164d6626c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -35,9 +38,99 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ad reprehenderit quaerat? Non atque pariatur aperiam laudantium natus quis cupiditate ullam beatae necessitatibus quia impedit aut ut eligendi, animi adipisci!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web Development</span><br>web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>freshers</li>
+                            <li><span>2024 - Current</span><br>freshers</li>
+                            <li><span>2024 - Current</span><br>freshers</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Mallabum Institute of Technology</li>
+                            <li><span>2021</span><br>Bishnupur Public Institute of Engineering</li>
+                            <li><span>2019</span><br>Ramjibanpur Babulal Institution</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ------------Services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web desingn</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates quo maiores totam labore quia.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates quo maiores totam labore quia.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App desingn</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates quo maiores totam labore quia.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------Portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis sequi adipisci sit, laboriosam explicabo nihil vel, voluptatem tempore voluptatibus harum quis! Esse obcaecati nobis magni numquam, aut harum quas!</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis sequi adipisci sit, laboriosam explicabo nihil vel, voluptatem tempore voluptatibus harum quis! Esse obcaecati nobis magni numquam, aut harum quas!</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online shoppingApp</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis sequi adipisci sit, laboriosam explicabo nihil vel, voluptatem tempore voluptatibus harum quis! Esse obcaecati nobis magni numquam, aut harum quas!</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------script tag---------- -->
+<script src="script.js"></script>
+   
 </body>
 </html>
