@@ -40,3 +40,26 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzf_QOQ0tfNnyJujIVhz4
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+// ..............back to top..................
+var intervaltop;
+var topbtn = document.querySelector('#topbtn');
+
+window.addEventListener('scroll', function(){
+    if (document.documentElement.scrollTop > 20) {
+        topbtn.style.display = "block";
+    } else {
+        topbtn.style.display = "none";
+    }
+});
+topbtn.addEventListener('click',function(event){
+    event.preventDefault();
+    intervaltop = setInterval(function(){
+        console.log(intervaltop)
+        if(document.documentElement.scrollTop <= 0 ){
+            clearInterval(intervaltop);
+            return;
+        }
+        window.scrollBy(0,-100);
+    },10)
+});
